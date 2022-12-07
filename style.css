@@ -109,7 +109,9 @@ footer p {
   margin: 80px 20%;
   font-size: 18px;
   font-weight: 600;
+  display: none;
 }
-.contact {
+
+#addBook{
   display: none;
 }
