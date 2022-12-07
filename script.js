@@ -4,7 +4,6 @@ const form = document.querySelector('form');
 const title = document.querySelector('.title');
 const author = document.querySelector('.author');
 
-// Navbar functionality
 const list = document.querySelector('#list');
 const addNew = document.querySelector('#addNew');
 const contactLink = document.querySelector('#contact');
