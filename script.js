@@ -47,19 +47,19 @@ class BookList {
     location.reload();
   }
 
-  showList() {
+  static showList() {
     awesomeBooks.style.display = 'block';
     contact.style.display = 'none';
     addBook.style.display = 'none';
   }
 
-  showNew(){
+  static showNew(){
     awesomeBooks.style.display = 'none';
     contact.style.display = 'none';
     addBook.style.display = 'block';
   }
 
-  showContact(){
+  static showContact(){
     awesomeBooks.style.display = 'none';
     contact.style.display = 'block';
     addBook.style.display = 'none';
