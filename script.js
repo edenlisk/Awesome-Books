@@ -29,18 +29,24 @@ class BookList {
       bookTitle.innerHTML = `${book.name} by ${book.author}`;
       bookDiv.append(bookTitle, remove);
       bookDisplayContainer.appendChild(bookDiv);
-      remove.addEventListener('click', () => {
-        bookDisplayContainer.removeChild(remove.parentElement);
-        this.information.splice(index, 1);
-        localStorage.setItem('books', JSON.stringify(this.information));
-        location.reload();
-      });
     });
+  }
+  removeBook(button,index){
+      bookDisplayContainer.removeChild(button.parentElement);
+      this.information.splice(index, 1);
+      localStorage.setItem('books', JSON.stringify(this.information));
+      location.reload();
   }
 }
 
 const bookCollection = new BookList();
 bookCollection.displayBooks();
+const remove = document.querySelectorAll('.remove');
+remove.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    bookCollection.removeBook(btn,index);
+  })
+})
 if (bookDisplayContainer.childElementCount === 0) {
   bookDisplayContainer.classList.add('d-none');
 }
