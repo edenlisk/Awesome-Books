@@ -18,7 +18,7 @@ class BookList {
   }
 
   displayBooks() {
-    this.information.forEach((book, index) => {
+    this.information.forEach((book) => {
       const bookTitle = document.createElement('p');
       const remove = document.createElement('button');
       remove.textContent = 'Remove';
@@ -31,11 +31,12 @@ class BookList {
       bookDisplayContainer.appendChild(bookDiv);
     });
   }
-  removeBook(button,index){
-      bookDisplayContainer.removeChild(button.parentElement);
-      this.information.splice(index, 1);
-      localStorage.setItem('books', JSON.stringify(this.information));
-      location.reload();
+
+  removeBook(button, index) {
+    bookDisplayContainer.removeChild(button.parentElement);
+    this.information.splice(index, 1);
+    localStorage.setItem('books', JSON.stringify(this.information));
+    location.reload();
   }
 }
 
@@ -44,9 +45,9 @@ bookCollection.displayBooks();
 const remove = document.querySelectorAll('.remove');
 remove.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    bookCollection.removeBook(btn,index);
-  })
-})
+    bookCollection.removeBook(btn, index);
+  });
+});
 if (bookDisplayContainer.childElementCount === 0) {
   bookDisplayContainer.classList.add('d-none');
 }
