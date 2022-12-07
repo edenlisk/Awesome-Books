@@ -53,18 +53,17 @@ class BookList {
     addBook.style.display = 'none';
   }
 
-  static showNew(){
+  static showNew() {
     awesomeBooks.style.display = 'none';
     contact.style.display = 'none';
     addBook.style.display = 'block';
   }
 
-  static showContact(){
+  static showContact() {
     awesomeBooks.style.display = 'none';
     contact.style.display = 'block';
     addBook.style.display = 'none';
   }
-
 }
 
 const bookCollection = new BookList();
@@ -79,7 +78,7 @@ remove.forEach((btn, index) => {
 
 if (bookDisplayContainer.childElementCount === 0) {
   const defaultMessage = document.createElement('p');
-  defaultMessage.classList.add('text-center', 'fs-3')
+  defaultMessage.classList.add('text-center', 'fs-3');
   defaultMessage.innerText = 'No Awesome Books';
   bookDisplayContainer.appendChild(defaultMessage);
 }
@@ -93,7 +92,6 @@ form.addEventListener('submit', (e) => {
   }
   e.preventDefault();
 });
-
 
 list.addEventListener('click', (e) => {
   e.preventDefault();

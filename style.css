@@ -3,12 +3,15 @@
 .bookDisplayContainer {
   border: black 4px solid;
 }
+
 .allAwesomeBooks {
   margin: 2%;
 }
+
 .allAwesomeBooks h1 {
   text-align: center;
 }
+
 .book-div {
   font-family: 'LT Asus Print', sans-serif;
   display: flex;
@@ -64,9 +67,11 @@
   border: black 4px solid;
   margin: 2%;
 }
+
 .awesome {
   margin-left: 10px;
 }
+
 .navlist ul {
   display: flex;
   gap: 10px;
@@ -74,18 +79,22 @@
   padding: 0;
   margin: auto;
 }
+
 .navlist {
   margin-right: 10px;
 }
+
 .list-items {
   font-size: 20px;
   font-weight: 700;
 }
+
 .list-items a:link,
 .list-items a:visited {
   text-decoration: none;
   color: black;
 }
+
 .list-items a:hover,
 .list-items a:active {
   color: blue;
@@ -98,6 +107,7 @@ footer {
   height: 70px;
   align-items: center;
 }
+
 footer p {
   margin: auto;
   font-size: 23px;
@@ -112,6 +122,6 @@ footer p {
   display: none;
 }
 
-#addBook{
+#addBook {
   display: none;
 }
