@@ -94,15 +94,15 @@ form.addEventListener('submit', (e) => {
 
 list.addEventListener('click', (e) => {
   e.preventDefault();
-  bookCollection.showList();
+  BookList.showList();
 });
 
 addNew.addEventListener('click', (e) => {
   e.preventDefault();
-  bookCollection.showNew();
+  BookList.showNew();
 });
 
 contactLink.addEventListener('click', (e) => {
   e.preventDefault();
-  bookCollection.showContact();
+  BookList.showContact()
 });
