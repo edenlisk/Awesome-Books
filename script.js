@@ -104,5 +104,5 @@ addNew.addEventListener('click', (e) => {
 
 contactLink.addEventListener('click', (e) => {
   e.preventDefault();
-  BookList.showContact()
+  BookList.showContact();
 });
